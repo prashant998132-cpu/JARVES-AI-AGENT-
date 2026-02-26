@@ -16,6 +16,19 @@ const HomePage = () => {
     ? tools
     : tools.filter((tool) => tool.category === selectedCategory);
 
+  // Category colors for UI
+  const categoryColors = {
+    "Image Generation": "bg-purple-900",
+    "Image Editing": "bg-yellow-900",
+    "Image Upscaling": "bg-orange-900",
+    "Text Generation": "bg-green-900",
+    "Text Editing": "bg-pink-900",
+    "Text to Visual": "bg-indigo-900",
+    "Video Generation": "bg-blue-900",
+    "Music Generation": "bg-red-900",
+    "Voice/TTS": "bg-cyan-900",
+  };
+
   return (
     <div className="min-h-screen bg-gray-900 p-4">
       <h1 className="text-3xl font-bold text-center mb-6" style={{ color: "#ff1a88" }}>
